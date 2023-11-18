@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goomba</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            
+        }
+        .container{
+            display: grid;
+            height: 800px;
+            width: 800px;
+            grid-template-rows:  repeat(16, 1fr);
+            grid-template-columns: repeat(16, 1fr);
+            gap: 1px;
+            background-color: black;
+        }
+        .orangeitem{
+            background-color: #e65100;
+        }
+        .blackitem{
+            background-color: #232629;
+        }
+        .peachitem{
+            background-color: #ffcd94;
+        }
+        .orange1{
+            grid-column-start: 7;
+            grid-column-end: 11;
+        }
+        .orange2{
+            grid-column-start: 6;
+            grid-column-end: 12;
+        }
+        .orange3{
+            grid-column-start: 5;
+            grid-column-end: 13;
+        }
+        .orange4{
+            grid-column-start: 4;
+            grid-column-end: 14;
+        }
+        .orange5{
+            grid-column-start: 3;
+            grid-row-start: 5;
+        }
+        .black1{
+           
+           grid-column-start: 4;
+           grid-column-end: 6;
+        }
+        .orange6{
+            grid-column-start: 6;
+            grid-column-end: 12;
+        }
+        .black2{
+            grid-column: span 2;
+        }
+        .orange8{
+            /* grid-row-start: 6; */
+            grid-area: 6 / 2 / 8 / 5;
+        }
+        .peach1{
+            grid-area: 6 / 5 / 10 / 6;
+        }
+        .black3{
+            grid-area: 6 / 6 / 9 / 7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="orangeitem orange1"></div>
+        <div class="orangeitem orange2"></div>
+        <div class="orangeitem orange3"></div>
+        <div class="orangeitem orange4"></div>
+        <div class="orangeitem orange5"></div>
+        <div class="blackitem black1"></div>
+        <div class="orangeitem orange6"></div>
+        <div class="blackitem black2"></div>
+        <div class="orangeitem orange7"></div>
+        <div class="orangeitem orange8"></div>
+        <div class="peachitem peach1"></div>
+        <div class="blackitem black3"></div>
+    </div>
+</body>
+</html>
